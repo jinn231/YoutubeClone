@@ -13,12 +13,12 @@ const multer = require("multer")
 
 const corsOptions = {
     credentials: true,
-    origin: "http://localhost:3000",
+    origin: "https://youtube-clonebyjinn.netlify.app",
     methods: ['GET','POST','PUT','DELETE']
 }
 
 app.use((req, res, next) => {
-    res.setHeader("Access-Control-Allow-Origin", "http://localhost:3000")
+    res.setHeader("Access-Control-Allow-Origin", "https://youtube-clonebyjinn.netlify.app")
     res.setHeader("Access-Control-Allow-Methods", "PUT, POST, GET, PATCH, DELETE, OPTION")
     res.setHeader("Access-Control-Allow-Headers", 'Content-Type, Authorization')
     next()
